@@ -8,7 +8,7 @@ import appindicator
 import os
 
 APP_NAME = "Audio Input indicator"
-APP_VERSION = "0.1"
+APP_VERSION = "0.2"
 
 
 class IndicatorAudioInput:
@@ -20,6 +20,8 @@ class IndicatorAudioInput:
                 "audio-input",
                 "audio-input",
                 appindicator.CATEGORY_APPLICATION_STATUS)
+
+        self.indicator.set_icon_theme_path(os.path.dirname(os.path.realpath(__file__)))
         self.indicator.set_status(appindicator.STATUS_ACTIVE)
 
         self.setup_menu()

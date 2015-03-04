@@ -1,4 +1,4 @@
-# indicator-audio-input
+# indicator-audio-input v0.2
 
 > python2 indicator applet to show microphone status
 
@@ -29,7 +29,11 @@ python2 indicator-audio-input.py &
 ## Changelog
 
 ```
-2015-03-04 
+2015-03-04 v0.2
+- Use script path for icons
+- Remove desktop file
+
+2015-03-04 v0.1
 - Initial commit -- everything works for me...
 ```
 
