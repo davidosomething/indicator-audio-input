@@ -1,7 +1,8 @@
 # indicator-audio-input
 
 > python2 indicator applet to show microphone status
-> [GitHub](https://github.com/davidosomething/indicator-audio-input)
+
+[GitHub](https://github.com/davidosomething/indicator-audio-input)
 
 
 ## Installation
@@ -27,7 +28,8 @@ python2 indicator-audio-input.py &
 
 ## Changelog
 
-### 2015-03-04
-
+```
+2015-03-04 
 - Initial commit -- everything works for me...
+```
 
