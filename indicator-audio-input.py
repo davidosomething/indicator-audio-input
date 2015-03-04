@@ -13,15 +13,18 @@ APP_VERSION = "0.2"
 
 class IndicatorAudioInput:
     def __init__(self):
-        self.icon_unmuted = "microphone11.png"
-        self.icon_muted = "microphone109.png"
+        realpath = os.path.realpath(__file__)
+        iconpath = os.path.abspath(
+                os.path.join(os.path.dirname(realpath), 'icons'))
+
+        self.icon_unmuted = iconpath + "/microphone11.png"
+        self.icon_muted = iconpath + "/microphone109.png"
 
         self.indicator = appindicator.Indicator(
                 "audio-input",
                 "audio-input",
                 appindicator.CATEGORY_APPLICATION_STATUS)
 
-        self.indicator.set_icon_theme_path(os.path.dirname(os.path.realpath(__file__)))
         self.indicator.set_status(appindicator.STATUS_ACTIVE)
 
         self.setup_menu()
